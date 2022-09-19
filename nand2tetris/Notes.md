@@ -41,6 +41,14 @@ if (a == 1 and b ==1) then out=0 else out = 1
 ---
 
 - Gate interface is implemented as an HDL stub file
+- HDl is a functional / declarative language ( gates can be described in any order)
+- Left to right is preferred description
+
+## Other Languages
+
+- VHDL
+- Verilog
+- Many more, first two are used in 90% of hardware design projects
 
 ```hdl
 CHIP Xor {
@@ -48,8 +56,27 @@ CHIP Xor {
     OUT out;
 
     PARTS:
-    // implementation missing
+    // Not Implemented
 }
 ```
 
 > General idea: out = 1 when a AND NOT(b) OR b AND NOT(a) (a is true and b is false or b is true and a is false)
+
+**Example:**
+<img src = "../images/hdl-interface-1.png" width = "300">
+
+```hdl
+
+CHIP Xor {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Not (in = a, out = nota)
+    Not (in = b, out = notb)
+    And (a = a, b = notb, out = aAndNotb)
+    And (a = nota, b = b, out = notaAndb)
+    OR (a=aAndNotb, b = notaAndb, out = out)
+}
+
+```
