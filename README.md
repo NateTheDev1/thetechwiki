@@ -6,7 +6,7 @@
     A collection of notes, research, and information on all things tech
 </p>
 <p align="center">
-    v0.1.0 🚧
+    v0.1.1 🚧
 </p>
 
 # Table Of Contents
