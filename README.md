@@ -43,7 +43,7 @@ Releases will be created through the GitHub feature. Content written into `main`
 <div style="background: #1D252C; border: 1px solid grey; padding: 2rem; border-radius: 12px;">
 <img style="border-radius: 8px; border: 1px solid white;" src="https://avatars.githubusercontent.com/u/46858886?v=4" height=200 />
 <br></br>
-[Nathaniel Richards] (https://nathanielrichards.dev)
+Nathaniel Richards, Creator: https://nathanielrichards.dev
 <br></br>
 <p>Engineer @Clockwork Labs</p>
 <p>Software Engineer learning more about system development and architecture</p>
